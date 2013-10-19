@@ -1,0 +1,30 @@
+{
+  "name": "path-resolver",
+  "description": "returns a valid filesystem path.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/b3ngr33ni3r/path-resolver",
+  "author": {
+    "name": "Ben Greenier",
+    "email": "ben+npm@bengreenier.com",
+    "homepage": "bengreenier.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/b3ngr33ni3r/path-resolver.git"
+  },
+  "bugs": {
+    "url": "https://github.com/b3ngr33ni3r/path-resolver/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/b3ngr33ni3r/path-resolver/blob/master/LICENSE"
+    }
+  ],
+  "main": "lib/path-resolver",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "keywords": ["path","resolve","filesystem","config path"],
+  "preferGlobal": false
+}
