@@ -6,12 +6,12 @@ module.exports = {
     if typeof path != "string"
       return false
     path = p.normalize(path)
-    return p.resolve(__dirname,path) 
+    return p.resolve(process.cwd(),path) 
   sync: (path) ->
     if typeof path != "string"
       return false
     path = p.normalize(path)
-    path = p.resolve(__dirname,path)
+    path = p.resolve(process.cwd(),path)
     if fs.existsSync path
       return path
     else
@@ -20,7 +20,7 @@ module.exports = {
     if typeof path != "string"
       return false
     path = p.normalize(path)
-    path = p.resolve(__dirname,path)
+    path = p.resolve(process.cwd(),path)
     fs.exists path,(exists)->
       if exists
         cb path

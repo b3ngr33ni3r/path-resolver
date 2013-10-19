@@ -4,6 +4,10 @@ path-resolver
 returns a valid filesystem path.
 
 
+New stuff:
+  + v0.0.2
+    - resolves to `process.cwd()` if they aren't absolute paths
+
 ## What?
 
 this is a really insanely simple module to do path normalization, and existence checking.
