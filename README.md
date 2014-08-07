@@ -45,5 +45,5 @@ if ((path = require('path-resolver').guess("/path/to/file.ext")) != false)
 
 ## A bit more info...
 
-so a __sync__ check uses `fs.existsSync` whereas __async__ uses `fs.exists`. __guess__ does check at all, just syntax verifies the path.
+so a __sync__ check uses `fs.existsSync` whereas __async__ uses `fs.exists`. __guess__ doesn't check at all, just syntax verifies the path.
 if any of these methods return false, the path syntax was invalid, or (if using sync or async) the path doesn't exist in the filesystem.
